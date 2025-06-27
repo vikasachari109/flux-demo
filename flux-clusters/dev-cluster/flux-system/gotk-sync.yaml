@@ -21,7 +21,7 @@ metadata:
 spec:
   interval: 10m0s
   path: ./flux-clusters/dev-cluster
-  prune: true
+  prune: true       # if we delete anything in git repo under dev-cluster, this prune will delete it from the cluster as well.
   sourceRef:
     kind: GitRepository
     name: flux-system
