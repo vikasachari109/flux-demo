@@ -26,3 +26,4 @@ spec:
     service:
       nodePort: 30005
       type: NodePort
+

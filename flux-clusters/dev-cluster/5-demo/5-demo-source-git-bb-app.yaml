@@ -5,7 +5,8 @@ metadata:
   name: 5-demo-source-git-helm-bb-app
   namespace: flux-system
 spec:
-  interval: 1m0s
+  interval: 1m
   ref:
     branch: 5-demo
   url: https://github.com/sidd-harth/bb-app-source
+
