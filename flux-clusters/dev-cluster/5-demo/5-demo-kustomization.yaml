@@ -1,5 +1,8 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+metadata:
+  name: 5-demo-kustomization
+  namespace: flux-system
 resources:
   - 5-demo-source-git-bb-app.yaml
   - 5-demo-helm-release-git-helm-bb-app.yaml
