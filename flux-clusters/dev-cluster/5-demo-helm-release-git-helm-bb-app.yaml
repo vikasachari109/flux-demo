@@ -15,6 +15,7 @@ spec:
   interval: 10s
   targetNamespace: 5-demo
   values:
+    fullnameOverride: bb-app
     labels:
       app:
         env: dev
