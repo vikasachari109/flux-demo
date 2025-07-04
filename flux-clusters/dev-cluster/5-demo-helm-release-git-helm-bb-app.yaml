@@ -7,7 +7,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: ./bb-app-source/helm-chart
+      chart: ./bb-app-source/helm-chart/Chart.yaml
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: GitRepository
