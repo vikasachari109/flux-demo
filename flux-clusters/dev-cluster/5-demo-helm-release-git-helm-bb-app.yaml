@@ -8,11 +8,11 @@ spec:
   chart:
     spec:
       chart: ./helm-chart
-      reconcileStrategy: ChartVersion
+      reconcileStrategy: ChartVersion  # whenever the chart version changes, the release will be reconciled 
       sourceRef:
         kind: GitRepository
         name: 5-demo-source-git-helm-bb-app
-  interval: 10s
+  interval: 10s            # check for changes every 10 seconds
   targetNamespace: 5-demo
   values:
     fullnameOverride: bb-app
